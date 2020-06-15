@@ -80,6 +80,9 @@ module.exports = function(env) {
                 },
                 "/user-context":{
                     target: 'http://localhost:3000'
+                },
+                "/beamtimedb": {
+                    target: 'http://localhost:8080'
                 }
             }
         }
