@@ -40,7 +40,7 @@ function newProxy(target){
     return {
         $proxy: true,
         load: () => {
-            return this.app.getContext(kUserContext).then(userContext => userContext.getOrDefault(this.id, new Context())[target])
+            return this.app.getContext(kUserContext).then(userContext => webix.extend(userContext.getOrDefault(this.id, new Context()), {commands: []})[target])
         },
         save: (master, params, dataProcessor) => {
             if(!dataProcessor.config.autoupdate) return;
@@ -182,7 +182,7 @@ export default class TableViewWidget extends WaltzWidget {
         const attributes = userContext.get(this.id).attributes
             .map(attr => new TangoAttribute(attr))
             .filter((v, i, a) => a.findIndex(item => item.name === v.name) === i);
-        const commands = userContext.get(this.id).commands
+        const commands = (userContext.get(this.id).commands === undefined ? [] : userContext.get(this.id).commands)
             .map(cmd => new TangoCommand(cmd))
             .filter((v, i, a) => a.findIndex(item => item.name === v.name) === i);
         const devices = userContext.get(this.id).devices;
