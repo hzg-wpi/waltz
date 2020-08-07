@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/waltz-controls/waltz.git"
+    "url": "git+https://github.com/hzg-wpi/waltz.git"
   },
   "keywords": [
     "waltz",
@@ -35,7 +35,7 @@
   "author": "Ingvord",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/waltz-controls/waltz/issues"
+    "url": "https://github.com/hzg-wpi/waltz/issues"
   },
   "homepage": "https://www.waltz-controls.space",
   "devDependencies": {
@@ -67,6 +67,8 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "@hzg-wpi/beamtimedb-waltz-plugin": "^1.0.5",
+    "@hzg-wpi/xenvhq-waltz-plugin": "^1.0.4",
     "@waltz-controls/eventbus": "^1.2.4",
     "@waltz-controls/middleware": "^2.0.0",
     "@waltz-controls/tango-rest-client": "^1.5.1",
