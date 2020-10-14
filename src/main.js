@@ -17,6 +17,7 @@ import {UserActionController, UserLogWidget} from "@waltz-controls/waltz-user-ac
 import TangoInfoPanelWidget from "widgets/tango/info";
 import {TangoRestController, TangoSubscriptionsController} from "@waltz-controls/waltz-tango-rest-plugin";
 import DashboardWidget from "widgets/tango/dashboard";
+import WaltzHintWidget from "widgets/hint";
 import {XenvHqWidget} from "@hzg-wpi/xenvhq-waltz-plugin";
 import {BeamtimeDbWidget} from "@hzg-wpi/beamtimedb-waltz-plugin"
 
@@ -38,6 +39,7 @@ const waltz = new Application({name: APPNAME, version: VERSION})
     .registerWidget(application => new TangoDeviceWidget(application))
     .registerWidget(application => new TangoInfoPanelWidget(application))
     .registerWidget(application => new UserLogWidget(application))
+    .registerWidget(application => new WaltzHintWidget(application))
     .registerWidget(application => new XenvHqWidget(application))
     .registerWidget(application => new BeamtimeDbWidget(application))
 
