@@ -61,11 +61,11 @@ To run the live demo click on the image
 User: tango-cs
 Pass: tango
 
-[![](https://github.com/tango-controls/tango-webapp/wiki/images/live.png)](http://ec2-18-184-90-206.eu-central-1.compute.amazonaws.com:8080/master/)
+[![](https://github.com/tango-controls/tango-webapp/wiki/images/live.png)](http://ec2-3-120-206-90.eu-central-1.compute.amazonaws.com:8080/master/)
 
 ## Getting started ##
 
-1. Execute `docker-copmpose.yml` using [`docker-compose`](https://docs.docker.com/compose/install/) i.e. `docker-compose up`
+1. Execute `docker-compose.yml` using [`docker-compose`](https://docs.docker.com/compose/install/) i.e. `docker-compose up`
 2. Open browser and navigate to `http://localhost:8080/waltz`
 3. Login using tango-cs/tango
 4. Explore Tango Controls via Waltz...
