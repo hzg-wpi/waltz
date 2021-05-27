@@ -49,6 +49,8 @@
 
 [5] [Waltz Workshop@DESY, 2019, part III](https://www.youtube.com/watch?v=2ryBt_Cztb0)
 
+[6] [Integrating React based widget into Waltz](https://yadi.sk/i/ce893D5mi1KcbQ)
+
 ### Slides
 
 [1] [TangoWebapp Insights, 32 Tango Users meeting, 2018](https://www.slideshare.net/IgorKhokhryakov/tangowebapp-insights)
@@ -71,9 +73,10 @@ Pass: tango
 
 ## Developer requirements ##
 
-* Tango Controls environment (tested on Tango 9)
-* Tango REST Server that supports API spec version rc4 (tested on [rest-server-1.6](https://github.com/tango-controls/rest-server/releases/tag/rest-server-1.6))
-* Web server that can handle .war files (tested on Apache Tomcat 8&9)
+* Tango Controls environment (tested on Tango 9.3+)
+* Tango REST Server that supports API spec version v1.1 (tested on [rest-server-2.1](https://github.com/tango-controls/rest-server/releases/tag/rest-server-2.1))
+* [User-Context](https://github.com/waltz-controls/user-context)
+* Web server that can handle .war files (tested on Apache Tomcat 8+)
 
 ## Build ##
 
