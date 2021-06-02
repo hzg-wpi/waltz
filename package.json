@@ -68,7 +68,7 @@
   },
   "dependencies": {
     "@hzg-wpi/beamtimedb-waltz-plugin": "^1.0.5",
-    "@hzg-wpi/xenvhq-waltz-plugin": "^1.0.4",
+    "@hzg-wpi/xenvhq-waltz-plugin": "^1.0.6",
     "@waltz-controls/eventbus": "^1.2.4",
     "@waltz-controls/middleware": "^2.0.0",
     "@waltz-controls/tango-rest-client": "^1.5.1",
