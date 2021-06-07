@@ -67,7 +67,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "@hzg-wpi/xenvhq-waltz-plugin": "^1.0.7",
+    "@hzg-wpi/xenvhq-waltz-plugin": "^1.0.8",
     "@waltz-controls/eventbus": "^1.2.4",
     "@waltz-controls/middleware": "^2.0.0",
     "@waltz-controls/tango-rest-client": "^1.5.1",
