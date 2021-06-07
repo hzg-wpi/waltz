@@ -14,12 +14,8 @@ import WebixMessageController from "controllers/message";
 import TangoDeviceWidget from "widgets/tango/device";
 import {UserContextController} from "@waltz-controls/waltz-user-context-plugin";
 import {UserActionController, UserLogWidget} from "@waltz-controls/waltz-user-actions-plugin";
-import TangoInfoPanelWidget from "widgets/tango/info";
 import {TangoRestController, TangoSubscriptionsController} from "@waltz-controls/waltz-tango-rest-plugin";
-import DashboardWidget from "widgets/tango/dashboard";
-import WaltzHintWidget from "widgets/hint";
 import {XenvHqWidget} from "@hzg-wpi/xenvhq-waltz-plugin"//"../../xenvhq-waltz-plugin/src";
-// import {BeamtimeDbWidget} from "@hzg-wpi/beamtimedb-waltz-plugin"
 
 // TangoWebappPlatform.consts.LOG_DATE_FORMATTER = webix.Date.dateToStr("%c");
 
@@ -34,14 +30,10 @@ const waltz = new Application({name: APPNAME, version: VERSION})
     .registerController(application => new UserContextController(application))
     .registerController(application => new UserActionController(application))
     .registerWidget(application => new MainWindow(application))
-    .registerWidget(application => new DashboardWidget(application))
     .registerWidget(application => new TangoTree(application))
     .registerWidget(application => new TangoDeviceWidget(application))
-    .registerWidget(application => new TangoInfoPanelWidget(application))
     .registerWidget(application => new UserLogWidget(application))
-    .registerWidget(application => new WaltzHintWidget(application))
     .registerWidget(application => new XenvHqWidget(application))
-    // .registerWidget(application => new BeamtimeDbWidget(application))
 
 
 export const kWaltz = 'app:waltz';
